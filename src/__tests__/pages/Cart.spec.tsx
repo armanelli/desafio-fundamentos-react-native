@@ -69,7 +69,7 @@ describe('Dashboard', () => {
   });
 
   it('should be able to calculate the cart total', async () => {
-    const { getByText } = render(<Cart />);
+    const { getByText, asJSON } = render(<Cart />);
 
     expect(getByText('15 itens')).toBeTruthy();
   });

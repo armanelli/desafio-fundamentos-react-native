@@ -66,7 +66,7 @@ useNavigationMocked.mockReturnValue({
   navigate,
 } as any);
 
-describe('Dashboard', () => {
+describe('FloatingCart', () => {
   it('should be able to calculate the cart total', async () => {
     const { getByText } = render(<FloatingCart />);
 
@@ -76,7 +76,7 @@ describe('Dashboard', () => {
   it('should be able to show the total quantity of itens in the cart', async () => {
     const { getByText } = render(<FloatingCart />);
 
-    expect(getByText('15 itens')).toBeTruthy();
+    expect(getByText('2 itens')).toBeTruthy();
   });
 
   it('should be able to navigate to the cart', async () => {
